@@ -1,0 +1,51 @@
+{
+  "name": "dsh-plugin-token-cost",
+  "version": "0.1.0",
+  "description": "Live token spend for the current DSH session, priced with your profile's table and shown beside the composer.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessicacui99/dsh-plugin-token-cost.git"
+  },
+  "homepage": "https://github.com/jessicacui99/dsh-plugin-token-cost#readme",
+  "bugs": {
+    "url": "https://github.com/jessicacui99/dsh-plugin-token-cost/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "token",
+    "cost",
+    "billing"
+  ],
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "lib/cost.js",
+    "cordis.patch.yml"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.2"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}

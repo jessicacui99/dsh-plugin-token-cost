@@ -1,0 +1,38 @@
+# Bundle patch for dsh-plugin-token-cost.
+#
+# One row, two halves: the host half registers the `tokenCost` Session
+# projection that carries this profile's pricing table to the browser, and the
+# browser half (declared by `dsh.client` in package.json) renders the live
+# spend pill beside the composer.
+#
+# To change prices, override this row in the PROFILE's own patch file
+# ($DSH_HOME/profiles/<profile>/cordis.patch.yml) instead of editing this one:
+#
+#   - id: token-cost
+#     config: { ...your complete table... }
+#
+# A patch replaces a row's whole `config`, so restate every field you keep.
+- insert:
+    - id: token-cost
+      name: 'dsh-plugin-token-cost'
+      config:
+        # The price list below is quoted in yuan, so the display stays in yuan
+        # and no exchange rate enters the number.
+        currency: CNY
+        # 'peak' | 'off-peak' | 'auto'. The quoted rates are PEAK rates;
+        # off-peak is half of peak on every row. 'auto' picks the tier from the
+        # provider's published window: Mon-Fri 01:00-04:00 and 06:00-10:00 UTC.
+        period: auto
+        # Yuan per 1,000,000 tokens, from the provider's Chinese price list.
+        # Models absent from this table show a token count but no amount.
+        models:
+          - model: deepseek-flash
+            provider: deepseek-official
+            inputCacheHit: 0.04
+            inputCacheMiss: 2
+            output: 8
+          - model: deepseek-v4-pro
+            provider: deepseek-official
+            inputCacheHit: 0.3
+            inputCacheMiss: 9
+            output: 27
