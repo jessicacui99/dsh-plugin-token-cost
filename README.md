@@ -9,6 +9,9 @@ Live token spend for the current DSH session, shown beside the composer.
 - Sits next to the built-in `38.4M tok · 缓存命中 99.6%` stats line, same size and height.
 - Peak/off-peak can be pinned; by default it follows UTC time (Mon–Fri 01:00–04:00 and 06:00–10:00 are peak).
 
+<img width="1882" height="224" alt="image" src="https://github.com/user-attachments/assets/51335545-fa37-4794-965a-1676a5ce3305" />
+
+
 ## Install
 
 ```sh
@@ -80,6 +83,9 @@ MIT
 - **金额是算出来的**：分桶 token 数 × 本 profile 的价格表。点一下价格胶囊展开明细：每一档的 token 数、单价与金额，并**同时列出高峰与空闲两个价格**（当前按哪个计价会标出来），方便和账单核对。
 - 位置就在内置的 `38.4M tok · 缓存命中 99.6%` 统计条旁边，同字号同高。
 - 高峰 / 低谷可以手动切换，默认按当前 UTC 时间自动判断（周一至周五 01:00–04:00、06:00–10:00 为高峰）。
+
+<img width="1882" height="224" alt="image" src="https://github.com/user-attachments/assets/0493fae6-f61c-4a92-8fbf-35844dc3d8fb" />
+
 
 ### 安装
 
