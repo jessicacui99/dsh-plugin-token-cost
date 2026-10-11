@@ -7,9 +7,11 @@ Live token spend for the current DSH session, shown beside the composer.
 - **Token counts are exact** — the four buckets the server reports (`tokenUsage`: cache-hit input, cache-miss input, cache write, output), not a local character estimate.
 - **Money is computed** — buckets × your profile's price table. Click the pill to expand: per-bucket tokens, unit price, charge, and **both the peak and off-peak rate** (the one in force is marked), so you can check it against a bill.
 - Sits next to the built-in `38.4M tok · 缓存命中 99.6%` stats line, same size and height.
-- Peak/off-peak can be pinned; by default it follows UTC time (Mon–Fri 01:00–04:00 and 06:00–10:00 are peak).
-
 <img width="1882" height="224" alt="image" src="https://github.com/user-attachments/assets/51335545-fa37-4794-965a-1676a5ce3305" />
+
+- Peak/off-peak can be pinned; by default it follows UTC time (Mon–Fri 01:00–04:00 and 06:00–10:00 are peak).
+<img width="1830" height="480" alt="image" src="https://github.com/user-attachments/assets/cb640ec6-1579-4d6a-aac1-583bb07b4957" />
+
 
 
 ## Install
@@ -82,9 +84,10 @@ MIT
 - **token 数是精确的**：来自服务端上报的 `tokenUsage` 投影（未命中缓存的输入 / 命中缓存的输入 / 缓存写入 / 输出四个分桶），不是本地按字符估算。
 - **金额是算出来的**：分桶 token 数 × 本 profile 的价格表。点一下价格胶囊展开明细：每一档的 token 数、单价与金额，并**同时列出高峰与空闲两个价格**（当前按哪个计价会标出来），方便和账单核对。
 - 位置就在内置的 `38.4M tok · 缓存命中 99.6%` 统计条旁边，同字号同高。
-- 高峰 / 低谷可以手动切换，默认按当前 UTC 时间自动判断（周一至周五 01:00–04:00、06:00–10:00 为高峰）。
-
 <img width="1882" height="224" alt="image" src="https://github.com/user-attachments/assets/0493fae6-f61c-4a92-8fbf-35844dc3d8fb" />
+- 高峰 / 低谷可以手动切换，默认按当前 UTC 时间自动判断（周一至周五 01:00–04:00、06:00–10:00 为高峰）。
+<img width="1830" height="480" alt="image" src="https://github.com/user-attachments/assets/cb640ec6-1579-4d6a-aac1-583bb07b4957" />
+
 
 
 ### 安装
